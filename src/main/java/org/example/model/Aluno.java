@@ -1,6 +1,7 @@
 package org.example.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -18,9 +19,11 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)              // <- anotação nova, no nível da classe
+
 public class Aluno {
 
-    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+
     private Long id;
 
     @NotBlank(message = "Nome é obrigatório")
