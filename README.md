@@ -1,11 +1,11 @@
-<img width="1616" height="766" alt="image" src="https://github.com/user-attachments/assets/e14be4ba-3a25-45e9-aad5-8f4258a0ecf8" /># Serviço de Cadastro (Grupo 1)
+# Serviço de Cadastro (Grupo 1)
 Serviço responsável pelas pessoas da escola: **alunos** e **professores**.
 
 ## Como executar
 O serviço sobe na **porta 8081**. 
 
 Todas as URLs abaixo usam
-`http://localhost:8081/alunos`.
+`http://localhost:8081/alunos`
 
 Os dados ficam persistidos em `dados/alunos.json` e `dados/professores.json`,
 na raiz do projeto. O arquivo é lido quando o serviço sobe e regravado a cada
