@@ -5,7 +5,7 @@ Serviço responsável pelas pessoas da escola: **alunos** e **professores**.
 O serviço sobe na **porta 8081**. 
 
 Todas as URLs abaixo usam
-`http://localhost:8081`.
+`http://localhost:8081/alunos`.
 
 Os dados ficam persistidos em `dados/alunos.json` e `dados/professores.json`,
 na raiz do projeto. O arquivo é lido quando o serviço sobe e regravado a cada
