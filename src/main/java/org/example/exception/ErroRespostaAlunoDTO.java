@@ -3,7 +3,7 @@ package org.example.exception;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public record ErroRespostaDTO(
+public record ErroRespostaAlunoDTO(
         LocalDateTime momento,
         int status,
         String erro,
@@ -11,11 +11,11 @@ public record ErroRespostaDTO(
         List<String> detalhes
 ) {
 
-    public ErroRespostaDTO(int status, String erro, String mensagem, List<String> detalhes) {
+    public ErroRespostaAlunoDTO(int status, String erro, String mensagem, List<String> detalhes) {
         this(LocalDateTime.now(), status, erro, mensagem, detalhes);
     }
 
-    public ErroRespostaDTO(int status, String erro, String mensagem) {
+    public ErroRespostaAlunoDTO(int status, String erro, String mensagem) {
         this(LocalDateTime.now(), status, erro, mensagem, List.of());
     }
 

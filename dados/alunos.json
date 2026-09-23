@@ -1,137 +1,129 @@
-[
-  {
-    "id": 1,
-    "nome": "Ana Souza",
-    "matricula": "2023001",
-    "email": "ana.souza@escola.edu.br",
-    "curso": "Informática",
-    "anoIngresso": "2023/1",
-    "nascimento": "15/03/2005"
-  },
-  {
-    "id": 2,
-    "nome": "Bruno Oliveira",
-    "matricula": "2023002",
-    "email": "bruno.oliveira@escola.edu.br",
-    "curso": "Sistemas de Informação",
-    "anoIngresso": "2023/2",
-    "nascimento": "22/07/2004"
-  },
-  {
-    "id": 3,
-    "nome": "Carlos Mendes",
-    "matricula": "2024003",
-    "email": "carlos.mendes@escola.edu.br",
-    "curso": "Análise e Desenvolvimento de Sistemas",
-    "anoIngresso": "2024/1",
-    "nascimento": "10/11/2005"
-  },
-  {
-    "id": 4,
-    "nome": "Daniela Ferreira",
-    "matricula": "2024004",
-    "email": "daniela.ferreira@escola.edu.br",
-    "curso": "Informática",
-    "anoIngresso": "2024/2",
-    "nascimento": "03/01/2006"
-  },
-  {
-    "id": 5,
-    "nome": "Eduardo Martins",
-    "matricula": "2024005",
-    "email": "eduardo.martins@escola.edu.br",
-    "curso": "Redes de Computadores",
-    "anoIngresso": "2024/1",
-    "nascimento": "18/09/2004"
-  },
-  {
-    "id": 6,
-    "nome": "Fernanda Alves",
-    "matricula": "2024006",
-    "email": "fernanda.alves@escola.edu.br",
-    "curso": "Sistemas de Informação",
-    "anoIngresso": "2024/2",
-    "nascimento": "27/05/2006"
-  },
-  {
-    "id": 7,
-    "nome": "Gabriel Costa",
-    "matricula": "2025007",
-    "email": "gabriel.costa@escola.edu.br",
-    "curso": "Análise e Desenvolvimento de Sistemas",
-    "anoIngresso": "2025/1",
-    "nascimento": "12/12/2005"
-  },
-  {
-    "id": 8,
-    "nome": "Helena Rodrigues",
-    "matricula": "2025008",
-    "email": "helena.rodrigues@escola.edu.br",
-    "curso": "Informática",
-    "anoIngresso": "2025/1",
-    "nascimento": "08/02/2007"
-  },
-  {
-    "id": 9,
-    "nome": "Igor Carvalho",
-    "matricula": "2025009",
-    "email": "igor.carvalho@escola.edu.br",
-    "curso": "Redes de Computadores",
-    "anoIngresso": "2025/2",
-    "nascimento": "30/06/2005"
-  },
-  {
-    "id": 10,
-    "nome": "Juliana Ribeiro",
-    "matricula": "2025010",
-    "email": "juliana.ribeiro@escola.edu.br",
-    "curso": "Sistemas de Informação",
-    "anoIngresso": "2025/2",
-    "nascimento": "14/10/2006"
-  },
-  {
-    "id": 11,
-    "nome": "Lucas Barbosa",
-    "matricula": "2026011",
-    "email": "lucas.barbosa@escola.edu.br",
-    "curso": "Análise e Desenvolvimento de Sistemas",
-    "anoIngresso": "2026/1",
-    "nascimento": "25/04/2007"
-  },
-  {
-    "id": 12,
-    "nome": "Mariana Lima",
-    "matricula": "2026012",
-    "email": "mariana.lima@escola.edu.br",
-    "curso": "Informática",
-    "anoIngresso": "2026/1",
-    "nascimento": "19/08/2007"
-  },
-  {
-    "id": 13,
-    "nome": "Nicolas Pereira",
-    "matricula": "2026013",
-    "email": "nicolas.pereira@escola.edu.br",
-    "curso": "Redes de Computadores",
-    "anoIngresso": "2026/2",
-    "nascimento": "06/12/2006"
-  },
-  {
-    "id": 14,
-    "nome": "Patrícia Gomes",
-    "matricula": "2026014",
-    "email": "patricia.gomes@escola.edu.br",
-    "curso": "Sistemas de Informação",
-    "anoIngresso": "2026/2",
-    "nascimento": "21/03/2007"
-  },
-  {
-    "id": 15,
-    "nome": "Rafael Teixeira",
-    "matricula": "2026015",
-    "email": "rafael.teixeira@escola.edu.br",
-    "curso": "Análise e Desenvolvimento de Sistemas",
-    "anoIngresso": "2026/2",
-    "nascimento": "11/07/2006"
-  }
-]
+[ {
+  "id" : 1,
+  "nome" : "Ana Souza",
+  "matricula" : "2023001",
+  "email" : "ana.souza@escola.edu.br",
+  "curso" : "Informática",
+  "anoIngresso" : "2023/1",
+  "nascimento" : "15/03/2005"
+}, {
+  "id" : 2,
+  "nome" : "Bruno Oliveira",
+  "matricula" : "2023002",
+  "email" : "bruno.oliveira@escola.edu.br",
+  "curso" : "Sistemas de Informação",
+  "anoIngresso" : "2023/2",
+  "nascimento" : "22/07/2004"
+}, {
+  "id" : 3,
+  "nome" : "Carlos Mendes",
+  "matricula" : "2024003",
+  "email" : "carlos.mendes@escola.edu.br",
+  "curso" : "Análise e Desenvolvimento de Sistemas",
+  "anoIngresso" : "2024/1",
+  "nascimento" : "10/11/2005"
+}, {
+  "id" : 4,
+  "nome" : "Daniela Ferreira",
+  "matricula" : "2024004",
+  "email" : "daniela.ferreira@escola.edu.br",
+  "curso" : "Informática",
+  "anoIngresso" : "2024/2",
+  "nascimento" : "03/01/2006"
+}, {
+  "id" : 5,
+  "nome" : "Eduardo Martins",
+  "matricula" : "2024005",
+  "email" : "eduardo.martins@escola.edu.br",
+  "curso" : "Redes de Computadores",
+  "anoIngresso" : "2024/1",
+  "nascimento" : "18/09/2004"
+}, {
+  "id" : 6,
+  "nome" : "Fernanda Alves",
+  "matricula" : "2024006",
+  "email" : "fernanda.alves@escola.edu.br",
+  "curso" : "Sistemas de Informação",
+  "anoIngresso" : "2024/2",
+  "nascimento" : "27/05/2006"
+}, {
+  "id" : 7,
+  "nome" : "Gabriel Costa",
+  "matricula" : "2025007",
+  "email" : "gabriel.costa@escola.edu.br",
+  "curso" : "Análise e Desenvolvimento de Sistemas",
+  "anoIngresso" : "2025/1",
+  "nascimento" : "12/12/2005"
+}, {
+  "id" : 8,
+  "nome" : "Helena Rodrigues",
+  "matricula" : "2025008",
+  "email" : "helena.rodrigues@escola.edu.br",
+  "curso" : "Informática",
+  "anoIngresso" : "2025/1",
+  "nascimento" : "08/02/2007"
+}, {
+  "id" : 9,
+  "nome" : "Igor Carvalho",
+  "matricula" : "2025009",
+  "email" : "igor.carvalho@escola.edu.br",
+  "curso" : "Redes de Computadores",
+  "anoIngresso" : "2025/2",
+  "nascimento" : "30/06/2005"
+}, {
+  "id" : 10,
+  "nome" : "Juliana Ribeiro",
+  "matricula" : "2025010",
+  "email" : "juliana.ribeiro@escola.edu.br",
+  "curso" : "Sistemas de Informação",
+  "anoIngresso" : "2025/2",
+  "nascimento" : "14/10/2006"
+}, {
+  "id" : 11,
+  "nome" : "Lucas Barbosa",
+  "matricula" : "2026011",
+  "email" : "lucas.barbosa@escola.edu.br",
+  "curso" : "Análise e Desenvolvimento de Sistemas",
+  "anoIngresso" : "2026/1",
+  "nascimento" : "25/04/2007"
+}, {
+  "id" : 12,
+  "nome" : "Mariana Lima",
+  "matricula" : "2026012",
+  "email" : "mariana.lima@escola.edu.br",
+  "curso" : "Informática",
+  "anoIngresso" : "2026/1",
+  "nascimento" : "19/08/2007"
+}, {
+  "id" : 13,
+  "nome" : "Nicolas Pereira",
+  "matricula" : "2026013",
+  "email" : "nicolas.pereira@escola.edu.br",
+  "curso" : "Redes de Computadores",
+  "anoIngresso" : "2026/2",
+  "nascimento" : "06/12/2006"
+}, {
+  "id" : 14,
+  "nome" : "Patrícia Gomes",
+  "matricula" : "2026014",
+  "email" : "patricia.gomes@escola.edu.br",
+  "curso" : "Sistemas de Informação",
+  "anoIngresso" : "2026/2",
+  "nascimento" : "21/03/2007"
+}, {
+  "id" : 15,
+  "nome" : "Rafael Teixeira",
+  "matricula" : "2026015",
+  "email" : "rafael.teixeira@escola.edu.br",
+  "curso" : "Análise e Desenvolvimento de Sistemas",
+  "anoIngresso" : "2026/2",
+  "nascimento" : "11/07/2006"
+}, {
+  "id" : 16,
+  "nome" : "Ana Souza",
+  "matricula" : "20230017",
+  "email" : "ana.souza@escola.edu.br",
+  "curso" : "Informática",
+  "anoIngresso" : "2023/1",
+  "nascimento" : "15/03/2005"
+} ]
