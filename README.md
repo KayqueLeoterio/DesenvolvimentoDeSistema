@@ -1,4 +1,4 @@
-# Serviço de Cadastro (Grupo 1)
+<img width="1616" height="766" alt="image" src="https://github.com/user-attachments/assets/e14be4ba-3a25-45e9-aad5-8f4258a0ecf8" /># Serviço de Cadastro (Grupo 1)
 Serviço responsável pelas pessoas da escola: **alunos** e **professores**.
 
 ## Como executar
@@ -113,7 +113,7 @@ Resposta (201 Created):
   > (`aluno.setId(null)` antes de cadastrar) e no `AlunoRepository`
   > (que sempre sobrescreve o id na criação e na atualização).
 
-## Regras de negócio implementadas
+## Regras de negócio implementadas - Alunos
 
 - **Matrícula única**: não é permitido cadastrar (POST) ou atualizar (PUT) um
   aluno com uma matrícula que já pertence a outro aluno. Se isso for
@@ -123,6 +123,10 @@ Resposta (201 Created):
   matrícula, e-mail, curso e ano de ingresso são obrigatórios; o e-mail
   precisa ter formato válido; o ano de ingresso segue o padrão `AAAA/1` ou
   `AAAA/2`; e a data de nascimento precisa estar no passado.
+
+  ## Regras de negócio implementadas - Professores
+
+
 
 ## Organização em camadas
 
