@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": 1,
+    "nome": "Manoella Azevedo",
+    "siape": "1234567",
+    "area": "Informática",
+    "email": "manoella.azevedo@ifsul.edu.br"
+  },
+  {
+    "id": 2,
+    "nome": "Carlos Eduardo Martins",
+    "siape": "2345678",
+    "area": "Matemática",
+    "email": "carlos.martins@ifsul.edu.br"
+  },
+  {
+    "id": 3,
+    "nome": "Juliana Ferreira Costa",
+    "siape": "3456789",
+    "area": "Português",
+    "email": "juliana.costa@ifsul.edu.br"
+  },
+  {
+    "id": 4,
+    "nome": "Rafael Oliveira Santos",
+    "siape": "4567890",
+    "area": "Física",
+    "email": "rafael.santos@ifsul.edu.br"
+  },
+  {
+    "id": 5,
+    "nome": "Patrícia Almeida Rocha",
+    "siape": "5678901",
+    "area": "Química",
+    "email": "patricia.rocha@ifsul.edu.br"
+  },
+  {
+    "id": 6,
+    "nome": "Felipe Henrique Souza",
+    "siape": "6789012",
+    "area": "História",
+    "email": "felipe.souza@ifsul.edu.br"
+  }
+]
