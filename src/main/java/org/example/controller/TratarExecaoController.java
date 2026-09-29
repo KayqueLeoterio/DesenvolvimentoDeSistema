@@ -2,8 +2,11 @@ package org.example.controller;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import org.example.exception.AlunoInvalidoException;
-import org.example.exception.ErroRespostaAlunoDTO;
 import org.example.exception.AlunoNaoEncontradoException;
+import org.example.exception.ProfessorInvalidoException;
+import org.example.exception.ProfessorNaoEncontradoException;
+import org.example.exception.ErroRespostaAlunoDTO;
+import org.example.exception.ErroRespostaProfessorDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -15,20 +18,36 @@ import java.util.List;
 
 @RestControllerAdvice
 public class TratarExecaoController {
-    // 404
+
+    // 404 - Aluno
     @ExceptionHandler(AlunoNaoEncontradoException.class)
     public ResponseEntity<ErroRespostaAlunoDTO> tratarNaoEncontrado(AlunoNaoEncontradoException ex) {
         ErroRespostaAlunoDTO erro = new ErroRespostaAlunoDTO(HttpStatus.NOT_FOUND.value(), "Não encontrado", ex.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erro);
     }
-    // 400
+
+    // 404 - Professor
+    @ExceptionHandler(ProfessorNaoEncontradoException.class)
+    public ResponseEntity<ErroRespostaProfessorDTO> tratarProfessorNaoEncontrado(ProfessorNaoEncontradoException ex) {
+        ErroRespostaProfessorDTO erro = new ErroRespostaProfessorDTO(HttpStatus.NOT_FOUND.value(), "Não encontrado", ex.getMessage());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(erro);
+    }
+
+    // 400 - Aluno
     @ExceptionHandler(AlunoInvalidoException.class)
     public ResponseEntity<ErroRespostaAlunoDTO> tratarRequisicaoInvalida(AlunoInvalidoException ex) {
         ErroRespostaAlunoDTO erro = new ErroRespostaAlunoDTO(HttpStatus.BAD_REQUEST.value(), "Requisição inválida", ex.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
     }
 
-    // 400 - campos inválidos
+    // 400 - Professor (Ex: SIAPE duplicado)
+    @ExceptionHandler(ProfessorInvalidoException.class)
+    public ResponseEntity<ErroRespostaProfessorDTO> tratarProfessorInvalido(ProfessorInvalidoException ex) {
+        ErroRespostaProfessorDTO erro = new ErroRespostaProfessorDTO(HttpStatus.BAD_REQUEST.value(), "Requisição inválida", ex.getMessage());
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
+    }
+
+    // 400 - Campos inválidos (Bean Validation de Aluno e Professor)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ErroRespostaAlunoDTO> tratarCamposInvalidos(MethodArgumentNotValidException ex) {
         List<String> detalhes = ex.getBindingResult().getFieldErrors().stream()
@@ -52,9 +71,4 @@ public class TratarExecaoController {
         ErroRespostaAlunoDTO erro = new ErroRespostaAlunoDTO(HttpStatus.BAD_REQUEST.value(), "JSON inválido", mensagem);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(erro);
     }
-
-
-
-
-
 }
