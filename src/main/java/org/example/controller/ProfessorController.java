@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/professor") // <- Caminho definido no enunciado do trabalho
+@RequestMapping("/professores") // <- Caminho definido no enunciado do trabalho
 public class ProfessorController {
 
     private final ProfessorService professorService;
